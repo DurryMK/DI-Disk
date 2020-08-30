@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>注册 | DI网盘</title>
+<link rel="stylesheet"
+	href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+<script
+	src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+<script
+	src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
+<link rel="stylesheet" href="../css/index.css">
+<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+</head>
+<body background="../img/loginbg.jpg">
+	<div id="app" class="row ">
+		<div class="col-xl-6 offset-xl-3 row rounded app">
+			<div class="col-xl-10 offset-xl-1 row rounded operation" @keyup.enter="subop">
+				<div class="col-xl-12 titleView">
+					<h5><B><span class="text-white">注册&nbsp;&nbsp;|&nbsp;&nbsp;DI云网盘</span></B></h5>
+				</div>
+				<div class="col-xl-10 offset-xl-1 row rounded inputView" >
+					<input type="text" class="form-control" placeholder="输入用户名"
+						v-model="username"> <input type="password"
+						class="form-control" placeholder="输入密码" v-model="pwd">
+				</div>
+				<div class="col-xl-10 offset-xl-1 resultView">
+					<span class="text-danger"><B>{{result}}</B></span>
+				</div>
+				<div class="col-xl-12 row buttonView">
+					<div class="col-xl-6 offset-xl-3">
+						<button type="button" class="btn btn-outline-danger full-btn"
+							@click="subop" @mouseout ="out"><B><span style="font-size: 20px">注册</span></B></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="version">
+			<span style="font-size: 10px;">Copyright © 2020 DI-Durry. All
+				rights reserved.</span>
+		</div>
+	</div>
+	
+</body>
+<script src="../js/reg.js"></script>
+</html>

@@ -1,0 +1,12 @@
+app\service\FileServiceImpl.class
+app\bean\User.class
+app\bean\SingleFod.class
+app\contorller\HdfsController.class
+app\bean\ResModel.class
+app\AppStarter.class
+app\bean\FilesPage.class
+app\dao\UserMapper.class
+app\conf\AppConfig.class
+app\service\FileService.class
+app\contorller\DistributeController.class
+app\Tools.class

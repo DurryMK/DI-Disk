@@ -1,0 +1,26 @@
+server:
+  port: 8899
+  servlet:
+    session.timeout: 60000
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 1000MB
+  undertow:
+    io-threads: 16
+    worker-threads: 256
+    buffer-size: 1024
+    buffer-per-region: 1024
+    direct-buffers: true
+logging:
+  level.root: info
+  level.org.springframework: warn
+  level.app: info
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?characterEncoding
+    username: root
+    password: sys123
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  type-aliases-package: app.mapper
